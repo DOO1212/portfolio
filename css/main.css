@@ -8,7 +8,7 @@
   scroll-behavior: smooth;
 }
 
-body {
+.inner {
   padding: 20px;
 }
 
@@ -232,6 +232,8 @@ h3 {
 /* 반응형 */
 @media screen and (max-width: 767px) {
   /* 모바일에서는 화면의 80%만 차지하도록 */
+  
+  
   .menu ul {
     display: block;
   }
