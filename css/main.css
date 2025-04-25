@@ -143,9 +143,9 @@ h3 {
 /* SCROLL-SPY */
 
 .scroll-spy {
-  transform: translateY(100px);
+  transform: translateY(200px);
   opacity: 0;
-  transition: 1s;
+  transition: 2s;
 }
 
 .scroll-spy.show {
@@ -249,20 +249,3 @@ h3 {
 
 
 
-
-/* 애니메이션 */
-.menu > ul {
-  animation: leftright 1s;
-}
-
-.name > div {
-  animation: rightleft 1s;
-}
-
-@keyframes leftright {
-  0% { transform: translate(-200px); }
-}
-
-@keyframes rightleft {
-  0% { transform: translate(200px); }
-}
