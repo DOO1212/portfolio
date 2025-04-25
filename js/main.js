@@ -64,7 +64,7 @@ const hamburger = document.querySelector('.btn-hamburger');
 
 window.addEventListener('scroll', function () {
 
-if (window.scrollY < 100) {
+if (window.scrollY < 10) {
   hamburger.style.display = "none";
 
   } else {
@@ -77,7 +77,7 @@ const downup = document.querySelector('.downup')
 
 window.addEventListener('scroll', function () {
 
-  if (window.scrollY > 100) {
+  if (window.scrollY > 10) {
     menu.style.height = "0";
     menu.style.overflow = "hidden";
 
