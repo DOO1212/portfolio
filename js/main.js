@@ -29,7 +29,7 @@ window.addEventListener('scroll', function () {
 // 페이지 스크롤 위치가
 // 500px을 넘으면 요소를 보이고
 // 500px을 넘지 않으면 요소 숨기기
-if (window.scrollY > 500) {
+if (window.scrollY > 100) {
   // 요소 보이기
   totopEl.style.opacity = 1;
   totopEl.style.transform = 'translateX(0)';
@@ -64,7 +64,7 @@ const hamburger = document.querySelector('.btn-hamburger');
 
 window.addEventListener('scroll', function () {
 
-if (window.scrollY < 10) {
+if (window.scrollY < 100) {
   hamburger.style.display = "none";
 
   } else {
@@ -77,7 +77,7 @@ const downup = document.querySelector('.downup')
 
 window.addEventListener('scroll', function () {
 
-  if (window.scrollY > 10) {
+  if (window.scrollY > 100) {
     menu.style.height = "0";
     menu.style.overflow = "hidden";
 
@@ -101,8 +101,6 @@ hamburger.addEventListener('click', function () {
     menu.style.overflow = "hidden";
   }
 });
-
-
 
 
 // TODO: 스크롤을 내려도 메뉴가 안 없어지게
