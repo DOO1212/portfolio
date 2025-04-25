@@ -52,6 +52,10 @@ img {
   margin-bottom: 20px;
 }
 
+.ani {
+  animation: light 2s linear infinite;
+}
+
 
 /* 햄버거 메뉴 */
 header .btn-hamburger {
@@ -201,8 +205,8 @@ h3 {
 #to-top {
   width: 42px;
   height: 42px;
-  background-color: #fff8e8;
-  border: 2px solid #878787;
+  background-color: #ffffff;
+  border: 2px solid #333;
   border-radius: 10px;
   cursor: pointer;
   display: flex;
@@ -217,6 +221,10 @@ h3 {
   /* 처음 상태는 투명에 x축으로 +100px 지점 */
   opacity: 0;
   transform: translateX(100px);
+}
+
+#to-top a {
+  color: #0099ff;
 }
 
 /* 반응형 */
@@ -249,3 +257,16 @@ h3 {
 
 
 
+@keyframes light {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

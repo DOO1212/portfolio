@@ -53,8 +53,10 @@ scroll.forEach(function (spy, index) {
     triggerHook: 0.6 // 화면의 50% 지점에서 보여짐 여부 감시(0~1사이 지정)
   })
   .setClassToggle(spy, 'show') // 요소가 화면에 보이면 show 클래스 추가
-  .addTo(controller); // 컨트롤러에 장면을 할당(필수) - 라이브러리에서 지정한 문법으로 깊게 이해 x
+  .addTo(controller); // 컨트롤러에 장면을 할당(필수) - 라이브러리에서 지정한 문법으로 깊게 이해x
+
 });
+
 
 
 // 햄버거 메뉴
@@ -71,6 +73,7 @@ if (window.scrollY < 100) {
 });
 
 const menu = document.querySelector('.menu ul')
+const downup = document.querySelector('.downup')
 
 window.addEventListener('scroll', function () {
 
@@ -98,5 +101,8 @@ hamburger.addEventListener('click', function () {
     menu.style.overflow = "hidden";
   }
 });
+
+
+
 
 // TODO: 스크롤을 내려도 메뉴가 안 없어지게
